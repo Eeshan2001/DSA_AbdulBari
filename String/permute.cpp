@@ -9,6 +9,7 @@ void permute(string a, int l, int r)
 { 
     // Base case 
     if (l == r) 
+    
         cout<<a<<endl; 
     else
     { 
@@ -29,7 +30,8 @@ void permute(string a, int l, int r)
 } 
 
 int main(){
-    string ans="ABC";
+    int intp = 123;
+    string ans=to_string(intp);
     permute(ans,0,ans.size()-1);
     return 0;
 }
