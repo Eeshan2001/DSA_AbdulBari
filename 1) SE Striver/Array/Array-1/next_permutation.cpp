@@ -17,6 +17,7 @@ void recurPermute(int index, vector<int>& nums, vector<vector<int>>& ans){
         swap(nums[index],nums[i]);
     }
 }
+
 vector<vector<int>> permute(vector<int> nums){
     vector<vector<int>> ans;
     recurPermute(0,nums,ans);
@@ -44,7 +45,7 @@ void nextPermutation(vector<int>& nums) {
         }
 }
 int main(){
-    vector<int> num{1,2,3};
+    vector<int> num{1,1,2};
     nextPermutation(num);
     for(auto it:num)
         cout<<it;

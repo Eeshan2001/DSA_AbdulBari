@@ -12,7 +12,7 @@ int maxSubArray(vector < int > & nums, vector < int > & subarray) {
         sum += nums[i];
         if (sum > maxi) {
             subarray.clear();
-            maxi = sum;
+            maxi = sum; 
             subarray.push_back(s);
             subarray.push_back(i);
 
